@@ -7,7 +7,7 @@ Testing Guidelines
 This section describes the testing framework and format standards for tests.
 Here we have heavily adapted the `Astropy version <https://docs.astropy.org/en/latest/development/testguide.html>`_, and **it is worth reading that link.**
 
-The testing framework used by sunpy is the `pytest`_ framework, accessed through the ``pytest`` command.
+The testing framework we use is the `pytest`_ framework, accessed through the ``pytest`` command.
 
 .. _pytest: https://pytest.org/en/latest/
 
@@ -33,11 +33,7 @@ Where to put tests
 ------------------
 
 Each package should include a suite of unit tests, covering as many of the public methods/functions as possible.
-These tests should be included inside each package, e.g::
-
-    sunpy/map/tests/
-
-"tests" directories should contain an ``__init__.py`` file so that the tests can be imported.
+These tests should be included inside each sub-package. Tests directories should contain an ``__init__.py`` file so that the tests can be imported.
 
 .. _doctests:
 
